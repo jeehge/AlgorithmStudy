@@ -10,6 +10,8 @@
 		DDB6ECAE254C88B700156B01 /* JH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB6ECA4254C88B700156B01 /* JH.framework */; };
 		DDB6ECB3254C88B700156B01 /* JHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6ECB2254C88B700156B01 /* JHTests.swift */; };
 		DDB6ECB5254C88B700156B01 /* JH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB6ECA7254C88B700156B01 /* JH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E970736725597E7500ABF6DB /* 모의고사.swift in Sources */ = {isa = PBXBuildFile; fileRef = E970736525597E7500ABF6DB /* 모의고사.swift */; };
+		E970736825597E7500ABF6DB /* 배열합치기.swift in Sources */ = {isa = PBXBuildFile; fileRef = E970736625597E7500ABF6DB /* 배열합치기.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		DDB6ECAD254C88B700156B01 /* JHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB6ECB2254C88B700156B01 /* JHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTests.swift; sourceTree = "<group>"; };
 		DDB6ECB4254C88B700156B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E970736525597E7500ABF6DB /* 모의고사.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "모의고사.swift"; sourceTree = "<group>"; };
+		E970736625597E7500ABF6DB /* 배열합치기.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "배열합치기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				DDB6ECA7254C88B700156B01 /* JH.h */,
 				DDB6ECA8254C88B700156B01 /* Info.plist */,
+				E970736525597E7500ABF6DB /* 모의고사.swift */,
+				E970736625597E7500ABF6DB /* 배열합치기.swift */,
 			);
 			path = JH;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					DDB6ECA3254C88B700156B01 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					DDB6ECAC254C88B700156B01 = {
 						CreatedOnToolsVersion = 12.1;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E970736825597E7500ABF6DB /* 배열합치기.swift in Sources */,
+				E970736725597E7500ABF6DB /* 모의고사.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		DDB6ECB9254C88B700156B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P84LEHU55L;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.castielticket.JH;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		DDB6ECBA254C88B700156B01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P84LEHU55L;
@@ -389,6 +401,7 @@
 		DDB6ECBC254C88B700156B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P84LEHU55L;
 				INFOPLIST_FILE = JHTests/Info.plist;
@@ -407,6 +420,7 @@
 		DDB6ECBD254C88B700156B01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P84LEHU55L;
 				INFOPLIST_FILE = JHTests/Info.plist;
